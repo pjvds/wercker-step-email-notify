@@ -15,7 +15,7 @@ host  = str(sys.argv[7])
 
 msg = "Subject: " + subject + "\n" + body
 server = smtplib.SMTP(host)
-server.set_debug(1)
+server.set_debuglevel(1)
 
 server.starttls()
 server.login(username,password)
